@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso</title>
+</head>
+
+<body>
+    <h2>Login realizado com sucesso!</h2>
+
+    <button onclick="mudarCorFundo()">Mudar Cor de Fundo</button>
+    <a href="login.html"><button id="cadastrar" type="submit">Novo Login</button></a>
+
+    <script>
+        function mudarCorFundo() {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            var cor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            document.body.style.backgroundColor = cor;
+        }
+    </script>
+</body>
+
+</html>
